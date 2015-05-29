@@ -1,3 +1,38 @@
+body {
+	background-color: #113537;
+}
+
+
+header {
+	font-size: 6em;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	color: grey;
+}
+
+img {
+	max-height: 200px;
+	max-width: 250px;
+	padding: 2px;
+	background-color: rgba(55,80,92,1);
+}
+
+.middle{
+	text-align: center;
+	margin: 7% 27% 7% 27%;
+
+}
+
+
+
+form{
+	font-family: 'Alegreya Sans', sans-serif;
+	color: grey;
+	font-size: 1.2em;
+}
+
+
+
 /* Coolors Exported Palette - coolors.co/ffead0-f76f8e-96616b-37505c-113537 
 
 color1: #ffead0; TAN
@@ -6,3 +41,6 @@ color3: #96616b; PURPLISH
 color4: #37505c; BLUE
 color5: #113537; DK BLUE
 */
+
+
+
