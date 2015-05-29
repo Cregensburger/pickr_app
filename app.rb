@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
+require 'pry'
 
 # Include the user model 
 require_relative './users.rb'
@@ -23,6 +24,10 @@ before do
 	end
 end 
 
+after do
+  ActiveRecord::Base.connection.close
+end
+
 # Guest Homepage route
 get '/' do
 	erb :guest_home
@@ -42,7 +47,7 @@ get '/register' do
 end
 
 # Check if login form contents posted is valid
-post '/' do 
+post '/login' do 
 	# Get form params
 	user_name = params['user_name']
 	password = params['password']

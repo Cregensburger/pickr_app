@@ -1,4 +1,6 @@
-require_relative './views/users.rb'
+require_relative 'users.rb'
+require 'pry'
+
 
 #add a test user to our database 
 user = User.new({ :user_name => "Redman", :email => "redman@email.com", :password => "red"})

@@ -5,7 +5,7 @@ require 'bcrypt'
 ActiveRecord::Base.establish_connection(
 	:adapter => 'postgresql',
 	:host => 'localhost',
-	:database => 'auth'
+	:database => 'pickr'
 )
 
 # User Class

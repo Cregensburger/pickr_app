@@ -1,7 +1,7 @@
 CREATE TABLE users(
 	id SERIAL PRIMARY KEY,
 	user_name TEXT NOT NULL UNIQUE,
-	password TEXT NOT NULL,
+	password_digest TEXT NOT NULL,
 	email TEXT NOT NULL UNIQUE
 );
 
@@ -9,5 +9,5 @@ CREATE TABLE pictures(
 	id SERIAL PRIMARY KEY,
 	url TEXT NOT NULL,
 	title TEXT,
-	user_id INTEGER FOREIGN KEY 
+	user_id INTEGER NOT NULL
 );
