@@ -35,15 +35,15 @@ get '/user/homepage' do
 	erb :guest_home
 end
 
-# # Display login form
-# get '/login' do 
-# 	erb :login
-# end
+# Display login form
+get '/login' do 
+	erb :login
+end
 
-# # Display registration form
-# get '/register' do
-# 	erb :register
-# end
+# Display registration form
+get '/register' do
+	erb :register
+end
 
 # Check if login form contents posted is valid
 post '/' do 
