@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 # Include the user model 
-require_relative './user'
+#require_relative './user'
 
 # Sessions are turned off by default, so enable it here
 # We use sessions in our app to keep track of authenticated users. If we didn't 
@@ -25,9 +25,9 @@ end
 
 # Guest Homepage route
 get '/' do
-	erb :index
-	erb :login
-	erb :register
+	erb :guest_home
+	#erb :login
+	#erb :register
 end
 
 # User Homepage route
