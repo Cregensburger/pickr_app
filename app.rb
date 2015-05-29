@@ -32,13 +32,9 @@ end
 
 # User Homepage route
 get '/user/homepage' do
-	erb :guest_home
+	erb :user_home
 end
 
-# Display login form
-get '/login' do 
-	erb :login
-end
 
 # Display registration form
 get '/register' do
